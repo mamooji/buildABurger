@@ -3,9 +3,6 @@ import Aux from "../../../hoc/Aux/Aux";
 import Button from "../../UI/Button/Button";
 class OrderSummary extends Component {
   //this could be a func component, doest hace to be a class component
-  componentWillUpdate() {
-    console.log("order summary will update");
-  }
   render() {
     const ingredientSummary = Object.keys(this.props.ingredients).map(
       (igKey) => {
